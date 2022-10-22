@@ -28,6 +28,11 @@ headers = {
 # }
 
 
+@app.route('/', methods=['GET'])
+def hello_world():
+    return 'Hello World'
+
+
 @app.route('/credit_card', methods=['POST'])
 def credit_payment():
     data = request.json
