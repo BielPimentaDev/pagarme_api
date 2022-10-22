@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import requests
+from env import PRODUCTION_KEY, TEST_KEY
 
 app = Flask(__name__)
 CORS(app)
@@ -14,8 +15,6 @@ cors = CORS(app, resources={
 
 URL = 'https://api.pagar.me/core/v5/orders'
 
-TEST_KEY = 'c2tfdGVzdF94QjhXdm53R2ZKVGtvOVlEOg=='
-PRODUCTION_KEY = 'c2tfUHBPWmtaOFR4aDFENG5WMDo='
 
 headers = {
     'accept': 'application/json',
