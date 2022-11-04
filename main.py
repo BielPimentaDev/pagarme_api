@@ -18,16 +18,16 @@ cors = CORS(app, resources={
 URL = 'https://api.pagar.me/core/v5/orders'
 first_read = True
 
-# headers = {
-#     'accept': 'application/json',
-#     'authorization': f'Basic {TEST_KEY}',
-#     'content-type': 'application/json'
-# }
 headers = {
     'accept': 'application/json',
-    'authorization': f'Basic {PRODUCTION_KEY}',
+    'authorization': f'Basic {TEST_KEY}',
     'content-type': 'application/json'
 }
+# headers = {
+#     'accept': 'application/json',
+#     'authorization': f'Basic {PRODUCTION_KEY}',
+#     'content-type': 'application/json'
+# }
 
 gamblers_list = []
 
